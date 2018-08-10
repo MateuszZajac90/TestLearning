@@ -120,8 +120,3 @@ namespace Test1AdrianM.Definition
 
 	}
 }
-
-
-
-//scenario outline
-//scenario context
