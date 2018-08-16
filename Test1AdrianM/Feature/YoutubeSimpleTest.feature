@@ -1,4 +1,4 @@
-﻿Feature: FirstTestInSpecFlow
+﻿Feature: YoutubeSimpleTest
 
 @SpecFlowTestTraining
 Scenario: Find Objectivity on Youtube(variable)

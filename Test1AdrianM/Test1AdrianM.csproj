@@ -81,13 +81,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Definition\SpecFlowFeature1.cs" />
-    <Compile Include="Feature\SpecFlowFeature1.feature.cs">
+    <Compile Include="Definition\HerokuSimpleTest.cs" />
+    <Compile Include="Definition\YoutubeSimpleTest.cs" />
+    <Compile Include="Feature\YoutubeSimpleTest.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+      <DependentUpon>YoutubeSimpleTest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Feature\HerokuSimpleTest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HerokuSimpleTest.feature</DependentUpon>
     </Compile>
     <Compile Include="Models\SearchField.cs" />
+    <Compile Include="PageObject\CommonPageObject.cs" />
+    <Compile Include="PageObject\HerokuCheckboxesPageObject.cs" />
+    <Compile Include="PageObject\HerokuDropdownPageObject.cs" />
     <Compile Include="PageObject\YoutubePageObject.cs" />
     <Compile Include="ProjectPageBase.cs" />
     <Compile Include="ProjectTestBase.cs" />
@@ -95,9 +104,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Feature\SpecFlowFeature1.feature">
+    <None Include="Feature\YoutubeSimpleTest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+      <LastGenOutput>YoutubeSimpleTest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Feature\HerokuSimpleTest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HerokuSimpleTest.feature.cs</LastGenOutput>
     </None>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>

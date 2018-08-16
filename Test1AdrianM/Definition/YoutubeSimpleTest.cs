@@ -10,13 +10,13 @@ using Test1AdrianM.PageObject;
 namespace Test1AdrianM.Definition
 {
 	[Binding]
-	class SpecFlowFeature1
+	class YoutubeSimpleTest
 	{//NIE WIEM PO CO TO >>>>>
 		private readonly DriverContext driverContext;
 		private readonly ScenarioContext scenarioContext;
 		private YoutubePageObject page;
 
-		public SpecFlowFeature1(ScenarioContext scenarioContext)
+		public YoutubeSimpleTest(ScenarioContext scenarioContext)
 		{
 			if (scenarioContext == null)
 			{

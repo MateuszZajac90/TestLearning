@@ -25,8 +25,8 @@ namespace Test1AdrianM.PageObject
 			SubscribeButtonLocator = new ElementLocator(Locator.XPath, "(//yt-formatted-string[text()='Subscribe'])[1]"),
 			SubscribeQuestionLocator = new ElementLocator(Locator.XPath, "//yt-formatted-string[text()='Want to subscribe to this channel?']"),
 			FirsMovieLocator = new ElementLocator(Locator.CssSelector, "#video-title"),
-			OpenMovieTitleLocator = new ElementLocator(Locator.CssSelector, "#video-title"),
-
+			OpenMovieTitleLocator = new ElementLocator(Locator.CssSelector, "#video-title");
+			//asdasdasdasd
 		public void NavigateToPage()
 		{
 					Driver.NavigateTo(GetUrl());
