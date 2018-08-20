@@ -1,9 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Objectivity.Test.Automation.Common;
 using Objectivity.Test.Automation.Tests.PageObjects.PageObjects.TheInternet;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using Pwc.Platform.UITests.PageObjects;
+using PageObjects;
+using PageObjects.TheInternet;
 using System;
 using TechTalk.SpecFlow;
 

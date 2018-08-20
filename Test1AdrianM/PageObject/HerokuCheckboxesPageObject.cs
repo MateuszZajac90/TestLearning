@@ -1,10 +1,11 @@
-﻿namespace Objectivity.Test.Automation.Tests.PageObjects.PageObjects.TheInternet
+﻿namespace PageObjects.TheInternet
 {
-	using Common.Extensions;
-	using Common.WebElements;
 	using NLog;
 	using Objectivity.Test.Automation.Common;
+	using Objectivity.Test.Automation.Common.Extensions;
 	using Objectivity.Test.Automation.Common.Types;
+	using Objectivity.Test.Automation.Common.WebElements;
+	using Objectivity.Test.Automation.Tests.PageObjects;
 
 	/// <summary>
 	/// The checkboxes page.

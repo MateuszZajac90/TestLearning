@@ -73,7 +73,7 @@ namespace Test1AdrianM.Feature
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("Youtube page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Youtube \'http://youtube.com\' page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 6
  testRunner.When("I put in search \'Objectivity wroclaw\' name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
@@ -96,7 +96,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 12
  this.ScenarioSetup(scenarioInfo);
 #line 13
- testRunner.Given("Youtube page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Youtube \'http://youtube.com\' page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "SearchThing"});
@@ -124,7 +124,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 22
  this.ScenarioSetup(scenarioInfo);
 #line 23
- testRunner.Given("Youtube page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Youtube \'http://youtube.com\' page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "SearchThing"});
@@ -159,7 +159,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 34
  this.ScenarioSetup(scenarioInfo);
 #line 35
- testRunner.Given("Youtube page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Youtube \'http://youtube.com\' page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 36
  testRunner.When(string.Format("I insert in search name {0}", channels), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 37
@@ -182,7 +182,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 47
  this.ScenarioSetup(scenarioInfo);
 #line 48
- testRunner.Given("Youtube page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("Youtube \'http://youtube.com\' page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 49
  testRunner.When("I found first movie on Youtube", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 50

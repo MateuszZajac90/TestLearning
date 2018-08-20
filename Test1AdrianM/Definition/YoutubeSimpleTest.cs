@@ -31,11 +31,22 @@ namespace Test1AdrianM.Definition
 				this.page = new YoutubePageObject(this.driverContext);
 			}
 		}
+
+		[Given(@"Youtube '(.*)' page is opened")]
+		public void GivenYoutubePageIsOpened(string newPage)
+		{
+
+			page.NavigateToPage(newPage);
+		}
+
+
+
 		[Given(@"Youtube page is opened")]
 		public void GivenYoutubePageIsOpened()
 		{
 			page.NavigateToPage();
 		}
+
 		[When(@"I put in search '(.*)' name")]
 		public void WhenIPutInSearchName(string companyName)
 		{

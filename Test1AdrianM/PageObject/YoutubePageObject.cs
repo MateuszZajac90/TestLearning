@@ -32,6 +32,12 @@ namespace Test1AdrianM.PageObject
 					Driver.NavigateTo(GetUrl());
 					Driver.Manage().Window.Maximize();
 		}
+		public void NavigateToPage(string newPage)
+		{
+			Driver.NavigateTo(new Uri(newPage));
+			Driver.Manage().Window.Maximize();
+		}
+
 		public void InputSearch(string companyName)
 		{
 			Driver.GetElement(SearchFieldLocator).SendKeys(companyName);

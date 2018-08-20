@@ -5,7 +5,7 @@ using Objectivity.Test.Automation.Common.Types;
 using Objectivity.Test.Automation.Tests.PageObjects;
 using System;
 
-namespace Pwc.Platform.UITests.PageObjects
+namespace PageObjects
 {
 	public class CommonPageObject : ProjectPageBase
 	{
@@ -33,6 +33,15 @@ namespace Pwc.Platform.UITests.PageObjects
 					break;
 				case "dropdown":
 					Driver.NavigateTo(GetUrl("dropdown"));
+					break;
+				case "password":
+					Driver.NavigateTo(GetUrl("login"));
+					break;
+				case "download":
+					Driver.NavigateTo(GetUrl("download"));
+					break;
+				case "upload":
+					Driver.NavigateTo(GetUrl("upload"));
 					break;
 				default:
 					Assert.IsTrue(false, "Page does not exist");

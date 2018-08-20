@@ -65,11 +65,13 @@
       <HintPath>..\packages\Objectivity.Test.Automation.Common.Features.3.1.6\lib\net45\Objectivity.Test.Automation.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="TechTalk.SpecFlow, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.3.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
@@ -81,8 +83,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Definition\HerokuFileDownloadSteps.cs" />
+    <Compile Include="Definition\HerokuFileUploadTestSteps.cs" />
+    <Compile Include="Definition\HerokuPasswordTestSteps.cs" />
     <Compile Include="Definition\HerokuSimpleTest.cs" />
     <Compile Include="Definition\YoutubeSimpleTest.cs" />
+    <Compile Include="Feature\HerokuFileTest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HerokuFileTest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Feature\HerokuFramesTest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HerokuFramesTest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Feature\HerokuPasswordTest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HerokuPasswordTest.feature</DependentUpon>
+    </Compile>
     <Compile Include="Feature\YoutubeSimpleTest.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +117,10 @@
     <Compile Include="PageObject\CommonPageObject.cs" />
     <Compile Include="PageObject\HerokuCheckboxesPageObject.cs" />
     <Compile Include="PageObject\HerokuDropdownPageObject.cs" />
+    <Compile Include="PageObject\HerokuFileDownloadPageObject.cs" />
+    <Compile Include="PageObject\HerokuFileUploadPageObject.cs" />
+    <Compile Include="PageObject\HerokuFramesPageObject.cs" />
+    <Compile Include="PageObject\HerokuPasswordPageObject.cs" />
     <Compile Include="PageObject\YoutubePageObject.cs" />
     <Compile Include="ProjectPageBase.cs" />
     <Compile Include="ProjectTestBase.cs" />
@@ -104,6 +128,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Feature\HerokuFileTest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HerokuFileTest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Feature\HerokuFramesTest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HerokuFramesTest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Feature\HerokuPasswordTest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HerokuPasswordTest.feature.cs</LastGenOutput>
+    </None>
     <None Include="Feature\YoutubeSimpleTest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>YoutubeSimpleTest.feature.cs</LastGenOutput>
