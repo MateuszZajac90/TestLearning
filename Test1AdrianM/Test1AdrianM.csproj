@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Definition\HerokuFileDownloadSteps.cs" />
     <Compile Include="Definition\HerokuFileUploadTestSteps.cs" />
+    <Compile Include="Definition\HerokuFramesTestSteps.cs" />
     <Compile Include="Definition\HerokuPasswordTestSteps.cs" />
     <Compile Include="Definition\HerokuSimpleTest.cs" />
     <Compile Include="Definition\YoutubeSimpleTest.cs" />

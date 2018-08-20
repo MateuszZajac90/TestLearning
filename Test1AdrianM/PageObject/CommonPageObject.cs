@@ -43,6 +43,9 @@ namespace PageObjects
 				case "upload":
 					Driver.NavigateTo(GetUrl("upload"));
 					break;
+				case "iframe":
+					Driver.NavigateTo(GetUrl("iframe"));
+					break;
 				default:
 					Assert.IsTrue(false, "Page does not exist");
 					break;

@@ -3,5 +3,6 @@
 
 Scenario: Simple Test with iFrame
 	Given Move to iFrame page
-	When I press add
-	Then the result should be 120 on the screen
+	When Clear TextField
+	And Put in TextField 'To jest moj testowy napis'
+	Then Verify that text is presented

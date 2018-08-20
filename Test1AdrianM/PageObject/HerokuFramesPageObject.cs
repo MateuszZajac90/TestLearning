@@ -16,12 +16,45 @@
 		private readonly ElementLocator
 			menu = new ElementLocator(Locator.Id, "mceu_14-body"),
 			iframe = new ElementLocator(Locator.Id, "mce_0_ifr"),
-			elelemtInIFrame = new ElementLocator(Locator.Id, "tinymce");
+			elelemtInIFrame = new ElementLocator(Locator.Id, "tinymce"),
+			boldButton = new ElementLocator(Locator.XPath, "//i[@class='mce-ico mce-i-bold']"),
+			writtenText= new ElementLocator(Locator.XPath, "//*[@id='tinymce']/p");
 
 		public HerokuFramesPageObject(DriverContext driverContext)
 			: base(driverContext)
 		{
 		}
+
+		public void FocusOnIFrame()
+		{
+			this.Driver.SwitchTo().Frame(Driver.GetElement(iframe));
+		}
+
+		public void FocusOnMenu()
+		{
+			this.Driver.SwitchTo().Frame(Driver.GetElement(menu));
+		}
+		public void ClearTextField()
+		{
+			this.Driver.SwitchTo().Frame(Driver.GetElement(iframe));
+			this.Driver.GetElement(elelemtInIFrame).Clear();
+		}
+
+		public void PressBoldBottom()
+		{
+			this.Driver.GetElement(boldButton).Click();
+		}
+
+		public void WriteText(string text)
+		{
+			this.Driver.GetElement(elelemtInIFrame).SendKeys(text);
+			
+		}
+		public string VerifyWriteText()
+		{
+			return this.Driver.GetElement(writtenText).Text;
+		}
+
 
 		public string TakeScreenShotsOfTextInIFrame(string folder, string name)
 		{
